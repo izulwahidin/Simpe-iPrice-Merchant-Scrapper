@@ -97,8 +97,6 @@ class iPrice
         if (curl_errno($ch)) throw new Exception(curl_error($ch), 1);
         curl_close($ch);
         if(!$result) throw new Exception("cannot parse data", 1);
-        
-        print_r($result);
         return $result;
     }
 }
